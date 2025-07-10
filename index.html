@@ -49,8 +49,8 @@
     document.getElementById('mpinButton').addEventListener('click', function() {
       window.htevents.track('MPINSetSuccesful', {
         userId: 'user123',
-        mpinStatus: 'successful',
-        timestamp: new Date().toISOString()
+        code: 'successful',
+        request_source: 'test'
       });
       alert('MPINSetSuccesful event sent!');
     });
