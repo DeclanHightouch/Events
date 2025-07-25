@@ -48,14 +48,26 @@
     }();
 
     // Send MPINSetSuccesful event when button clicked
-    document.getElementById('mpinButton').addEventListener('click', function() {
-      window.htevents.track('MPINSetSuccesful', {
-        userId: 'user123',
-        code: 'successful',
-        request_source: 'test'
-      });
-      alert('MPINSetSuccesful event sent!');
-    });
+  document.getElementById('mpinButton').addEventListener('click', function() {
+    const eventPayload = {
+      userId: 'user123',
+      code: 'successful',
+      request_source: 'test'
+    };
+
+    // Send the event
+    window.htevents.track('MPINSetSuccesful', eventPayload);
+
+    // Show full event request in the textarea as formatted JSON
+    const textarea = document.getElementById('eventDataTextarea');
+    const fullRequest = {
+      eventName: 'MPINSetSuccesful',
+      data: eventPayload
+    };
+    textarea.value = JSON.stringify(fullRequest, null, 2);
+
+    alert('MPINSetSuccesful event sent!');
+  });
   </script>
 </body>
 </html>
