@@ -58,6 +58,7 @@
     // Send the event
     window.htevents.track('MPINSetSuccesful', eventPayload);
     htevents.page(category, name, [properties], [context], [callback]);
+    htevents.identify("userhello", [traits], [context], [callback]);
 
     // Show full event request in the textarea as formatted JSON
     const textarea = document.getElementById('eventDataTextarea');
