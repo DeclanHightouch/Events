@@ -55,8 +55,187 @@
       request_source: 'test'
     };
 
+    testEvent = [
+  {
+    "type": "track",
+    "event": "vendor_purchase",
+    "userId": "marshel.barbash+pwa@cqlcorp.com",
+    "properties": {
+        "siteId": "elf-us",
+        "order_id": "00002502",
+        "customer": {
+            "customer_id": "ODS00700001503",
+            "first_name": "Marshel edit",
+            "last_name": "Barbash edit",
+            "email": "marshel.barbash+pwa@cqlcorp.com",
+            "phone": "",
+            "shipping_address": {
+                "first_name": "aergarg ",
+                "last_name": "aerg rg ",
+                "company_name": null,
+                "address": "4211 Southport Cir",
+                "address2": null,
+                "city": "Okemos",
+                "state_province": "MI",
+                "postal_code": "48864-3245",
+                "country_code": "US",
+                "phone": "(333) 333-3333",
+                "fax": ""
+            },
+            "billing_address": {
+                "first_name": "aergarg ",
+                "last_name": "aerg rg ",
+                "company_name": null,
+                "address": "4211 Southport Cir",
+                "address2": null,
+                "city": "Okemos",
+                "state_province_code": "MI",
+                "zip_postal_code": "48864-3245",
+                "country_code": "US",
+                "phone": "(333) 333-3333",
+                "fax": ""
+            }
+        },
+        "payment": {
+            "token_id": "en89t7wx",
+            "cc_exp_date": "2T8EUSXjaK5ho6aoPiW1zmsxI355HrQUfnVjwttoyKE=",
+            "cc_number": "***********1111",
+            "cc_type": "1"
+        },
+        "products": [
+            {
+                "productId": "1810",
+                "productLineItemId": "69737ad79c2acdb1fef0fbc5f1",
+                "productName": "Professional Set of 12 Makeup Brushes",
+                "primaryImageUrl": "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BBXC_007/on/demandware.static/-/Sites-elf-master/en_US/v1756410295970/1810_ProfessionalCompleteSetof12BrusheswebA.jpg?sw=1100&sh=1100&sm=fit&sfrm=jpg&quality=100&strip=true",
+                "quantity": 3,
+                "price": 10,
+                "netPrice": 10,
+                "grossPrice": 10.47,
+                "adjustedNetPrice": 9,
+                "adjustedGrossPrice": 9.47,
+                "total": 27,
+                "custom_data": {
+                    "item_category": "brushes-brush-sets",
+                    "product_family": ""
+                },
+                "totalOrderLineSalesTax": 1.41,
+                "discountAmount": 3
+            },
+            {
+                "productId": "83567",
+                "productLineItemId": "f6ae6a247b9f3cce9bcbc4a856",
+                "productName": "Halo Glow Liquid Filter",
+                "primaryImageUrl": "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BBXC_007/on/demandware.static/-/Sites-elf-master/en_US/v1756410295970/2022/HaloGlowLiquidFilter/82117_OpenA_R.jpg?sw=1100&sh=1100&sm=fit&sfrm=png&quality=100&strip=true",
+                "quantity": 2,
+                "price": 14,
+                "netPrice": 14,
+                "grossPrice": 14.68,
+                "adjustedNetPrice": 13,
+                "adjustedGrossPrice": 13.68,
+                "total": 26,
+                "custom_data": {
+                    "item_category": "face-highlighter",
+                    "product_family": "Halo"
+                },
+                "totalOrderLineSalesTax": 1.36,
+                "discountAmount": 2
+            },
+            {
+                "productId": "85323",
+                "productLineItemId": "13decef7e2e0860a682f9a1f89",
+                "productName": "Precision Foundation Swirl Brush",
+                "primaryImageUrl": "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BBXC_007/on/demandware.static/-/Sites-elf-master/en_US/v1756410295970/2021/85323_BRFAC_OpenA_R.jpg?sw=1100&sh=1100&sm=fit&sfrm=png&quality=100&strip=true",
+                "quantity": 1,
+                "price": 10,
+                "netPrice": 10,
+                "grossPrice": 10.47,
+                "adjustedNetPrice": 9,
+                "adjustedGrossPrice": 9.47,
+                "total": 9,
+                "custom_data": {
+                    "item_category": "brushes-face-brushes",
+                    "product_family": ""
+                },
+                "totalOrderLineSalesTax": 0.47,
+                "discountAmount": 1
+            },
+            {
+                "productId": "81958",
+                "productLineItemId": "00f2d12d7b7bbe7c3de4d44d01",
+                "productName": "Squeeze Me Lip Balm",
+                "primaryImageUrl": "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BBXC_007/on/demandware.static/-/Sites-elf-master/en_US/v1756410295970/2023/SqueezeMeLipBalm/81958_OpenA_0500_V3_R.jpg?sw=1100&sh=1100&sm=fit&sfrm=png&quality=100&strip=true",
+                "quantity": 1,
+                "price": 0,
+                "netPrice": 0,
+                "grossPrice": 0,
+                "adjustedNetPrice": 0,
+                "adjustedGrossPrice": 0,
+                "total": 0,
+                "custom_data": {
+                    "item_category": "lips-lip-balms-treatments",
+                    "product_family": ""
+                },
+                "totalOrderLineSalesTax": 0,
+                "discountAmount": 0
+            },
+            {
+                "productId": "57482",
+                "productLineItemId": "4496c7b69a99471b8543a837b5",
+                "productName": "Mini Holy Hydration! Face Cream",
+                "primaryImageUrl": "https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BBXC_007/on/demandware.static/-/Sites-elf-master/en_US/v1756410295970/2022/HolyHydration!NewPackaging/57482_Closed_R.jpg?sw=1100&sh=1100&sm=fit&sfrm=png&quality=100&strip=true",
+                "quantity": 1,
+                "price": 0,
+                "netPrice": 0,
+                "grossPrice": 0,
+                "adjustedNetPrice": 0,
+                "adjustedGrossPrice": 0,
+                "total": 0,
+                "custom_data": {
+                    "item_category": "skin-moisturizer",
+                    "product_family": ""
+                },
+                "totalOrderLineSalesTax": 0,
+                "discountAmount": 0
+            }
+        ],
+        "ordergroove_data": {
+            "subscription_info": []
+        },
+        "crowdtwist_data": {
+            "currency": "USD",
+            "date_purchased": "2025-09-02T18:32:11.000Z",
+            "channel_id": 2,
+            "coupons": [
+                "RWD8-D729C49641794485B2144D1F4329BF83",
+                "RWDPRD-10FC35F24F2846DCB992EC3A44F74BB9",
+                "RWDPRD-60C0E5D2A29B423F9A3129034EB53789"
+            ]
+        },
+        "orderGrossAmount": 62,
+        "orderDiscountAmount": 8,
+        "orderNetAmount": 54,
+        "shippingNetAmount": 24.95,
+        "orderTaxAmount": 3.24,
+        "orderTotal": 82.19,
+        "totalOrderQuantityNoGwp": 6,
+        "numberOfDistinctProductsNoGwp": 3,
+        "numberOfDistinctProducts": 5,
+        "totalOrderQuantity": 8,
+        "shippingMethodDescription": "Two Day Shipping (2-4 business days)"
+    },
+    "receivedAt": "2025-09-03T17:51:05.721Z",
+    "sentAt": "2025-09-03T17:51:05.721Z",
+    "originalTimestamp": "2025-09-03T17:51:05.721Z",
+    "timestamp": "2025-09-03T17:51:05.721Z",
+    "context": {
+        "ip": "34.195.33.38"
+    },
+    "messageId": "69bfa029-0c82-4eb7-a4ff-ae7b2709cb8a"
+}
+]
     // Send the event
-    window.htevents.track('MPINSetSuccesful', eventPayload);
+    window.htevents.track('MPINSetSuccesful', testEvent);
     htevents.page(category, name, [properties], [context], [callback]);
     htevents.identify("userhello", [traits], [context], [callback]);
 
